@@ -201,7 +201,8 @@ The API will return three types of errors:
         }
     ],
     "success": true,
-    "total_questions": 20}
+    "total_questions": 20
+    }
     ```
 
 - DELETE//questions/`<int:question_id>`
@@ -215,7 +216,8 @@ The API will return three types of errors:
 
         {
         "deleted": 2,
-        "success": true }
+        "success": true 
+        }
 
 - POST/questions
 
@@ -229,7 +231,8 @@ The API will return three types of errors:
 
         {
         "created": 39,
-        "success": true }
+        "success": true 
+        }
 
      ####2- In case searchTerm is included in request:
      General:
