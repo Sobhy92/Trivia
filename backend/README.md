@@ -82,7 +82,6 @@ The API will return three types of errors:
     - Returns a dictionary categories and success value.
     Sample: `curl http://127.0.0.1:5000/categories:`
     
-    
     ```
     {
     "categories": {
@@ -230,7 +229,7 @@ The API will return three types of errors:
 
         {
         "created": 39,
-        "success": true }'''
+        "success": true }
 
      ####2- In case searchTerm is included in request:
      General:
