@@ -81,8 +81,8 @@ The API will return three types of errors:
     - request all categories
     - Returns a dictionary categories and success value.
     Sample: `curl http://127.0.0.1:5000/categories:`
-
-
+    
+    ```
     {
     "categories": {
         "1": "Science",
@@ -92,7 +92,9 @@ The API will return three types of errors:
         "5": "Entertainment",
         "6": "Sports"
     },
-    "success": true }
+    "success": true 
+    }
+    ```
 
 - GET/questions
 
@@ -210,7 +212,6 @@ The API will return three types of errors:
 
     Sample: `curl http://127.0.0.1:5000/questions/2 -X DELETE`
 
-
         {
         "deleted": 2,
         "success": true }
@@ -237,8 +238,8 @@ The API will return three types of errors:
      questions, total resulted questions and current category of questions in the page.
 
      Sample: `curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{"searchTerm": "Where"}'`
-
-
+     
+     ```
      {
     "current_category": [
         3,
@@ -277,7 +278,9 @@ The API will return three types of errors:
         }
     ],
     "success": true,
-    "total_questions": 4 }
+    "total_questions": 4 
+    }
+    ```
 
 - GET/categories/`<int:category_id>`/questions
 
@@ -286,8 +289,8 @@ The API will return three types of errors:
      - Returns JSON object contains success message, questions list, total questions, current category id.
 
     Sample: `curl http://127.0.0.1:5000/categories/1/questions`
-
-
+    
+    ```
     {
     "current_category": 1,
     "questions": [
@@ -337,7 +340,8 @@ The API will return three types of errors:
     "success": true,
     "total_questions": 6
     }
-
+    ```
+    
 - POST/quizzes
 
     General:
@@ -346,8 +350,8 @@ The API will return three types of errors:
     if provided, and that is not one of the previous questions ans also success message.
 
     Sample: `curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{"previous_questions": [22], "quiz_category": {"type": "Science", "id": "1"}}'`
-
-
+    
+    ```
     {
     "question": {
         "answer": "The Liver",
@@ -358,6 +362,7 @@ The API will return three types of errors:
     },
     "success": true
     }
+    ```
 
 ## Testing
 To run the tests, run
