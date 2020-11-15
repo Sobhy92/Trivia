@@ -82,6 +82,7 @@ The API will return three types of errors:
     - Returns a dictionary categories and success value.
     Sample: `curl http://127.0.0.1:5000/categories:`
     
+    
     ```
     {
     "categories": {
@@ -104,6 +105,7 @@ The API will return three types of errors:
     - Returns total number of questions, dictionary of all categories and list of current categories in the page.
 
     Sample: `curl http://127.0.0.1:5000/questions?page=1:`
+    
     
     ```
     {
