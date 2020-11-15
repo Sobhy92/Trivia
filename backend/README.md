@@ -102,8 +102,8 @@ The API will return three types of errors:
     - Returns total number of questions, dictionary of all categories and list of current categories in the page.
 
     Sample: `curl http://127.0.0.1:5000/questions?page=1:`
-
-
+    
+    ```
     {
     "categories": {
         "1": "Science",
@@ -199,6 +199,7 @@ The API will return three types of errors:
     ],
     "success": true,
     "total_questions": 20}
+    ```
 
 - DELETE//questions/`<int:question_id>`
 
